@@ -11,17 +11,16 @@ public class Calculadora extends JFrame {
 		
 		organizarLayout();
 		
-		
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(420, 520);
+		setSize(368, 399);
 		setLocationRelativeTo(null);
 	}
 	private void organizarLayout() {
 		setLayout(new BorderLayout());
 		
 		Display display = new Display();
-		display.setPreferredSize(new Dimension(400, 70));
+		display.setPreferredSize(new Dimension(330, 70));
 		add(display, BorderLayout.NORTH);
 		Teclado teclado = new Teclado();
 		add(teclado, BorderLayout.CENTER);
